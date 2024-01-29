@@ -34,10 +34,14 @@ public class Main {
     }
 
     public static Boolean containsDigits(String pw) {
-        return !pw.isEmpty();
+        char[] allowedCharacters = "0123456789".toCharArray();
+        for(char c : allowedCharacters){
+            if (pw.contains("" + c)) return true;
+        }
+        return false;
     }
 
     public static Boolean containsSpecialCharacters(String pw) {
-        return !pw.isEmpty();
+        return false;
     }
 }
