@@ -71,4 +71,24 @@ class MainTest {
         // THEN
         assertTrue(actual);
     }
+
+    @Test
+    void isCommonlyUsedPassword(){
+        // GIVEN
+        String pw = "12345678Ab!";
+        // WHEN
+        Boolean actual = Main.isCommonlyUsedPassword(pw);
+        // THEN
+        assertTrue(actual);
+    }
+
+    @Test
+    void generateRandomPassword(){
+        // GIVEN
+        String pw = Main.generateRandomPassword();
+        // WHEN
+        Boolean actual = Main.passesAllSafePasswordTests(pw);
+        // THEN
+        assertTrue(actual);
+    }
 }

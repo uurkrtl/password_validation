@@ -44,4 +44,16 @@ public class Main {
     public static Boolean containsSpecialCharacters(String pw) {
         return false;
     }
+
+    public static Boolean isCommonlyUsedPassword(String pw) {
+        return false;
+    }
+
+    public static String generateRandomPassword() {
+        return "";
+    }
+
+    public static Boolean passesAllSafePasswordTests(String pw) {
+        return false;
+    }
 }
