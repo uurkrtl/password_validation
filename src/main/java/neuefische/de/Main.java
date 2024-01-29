@@ -42,7 +42,8 @@ public class Main {
     }
 
     public static Boolean containsSpecialCharacters(String pw) {
-        return false;
+        String specialChars = "[!@#$%^&*()_+\\-=\\[\\]{};':\",.<>/?]";
+        return password.matches(".*" + specialChars + ".*");
     }
 
     public static Boolean isCommonlyUsedPassword(String pw) {
