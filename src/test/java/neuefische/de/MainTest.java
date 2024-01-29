@@ -71,5 +71,4 @@ class MainTest {
         // THEN
         assertTrue(actual);
     }
-
 }
