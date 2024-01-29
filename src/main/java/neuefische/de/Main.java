@@ -10,7 +10,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         sb.append("Hello world!\n");
         sb.append("in this recap lecture we will ignore the fact that REGEX exists!\n");
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 
     public static Boolean hasAtLeast8Characters(String pw) {
@@ -34,10 +34,10 @@ public class Main {
     }
 
     public static Boolean containsDigits(String pw) {
-        return false;
+        return !pw.isEmpty();
     }
 
     public static Boolean containsSpecialCharacters(String pw) {
-        return false;
+        return !pw.isEmpty();
     }
 }
